@@ -1,0 +1,23 @@
+{
+  "name": "diet-app",
+  "version": "1.0.0",
+  "description": "A simple and professional user interface for a diet application.",
+  "main": "src/scripts/index.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'",
+    "test": "echo 'Test step not defined'"
+  },
+  "keywords": [
+    "diet",
+    "health",
+    "nutrition",
+    "application"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

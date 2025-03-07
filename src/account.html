@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Account</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+        <link rel="stylesheet" href="styles/styles.css">
+
+    </head>
+    <body>
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left w3-metro-purple" style="width:200px;" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+            <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+            <a href="account.html" class="w3-bar-item w3-button w3-mobile">My Account</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Find Products</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">My Plans</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Contact</a>
+        </div>
+
+        <div class="w3-main" style="margin-left:200px">
+        <button class="hamburger-button w3-button w3-metro-purple w3-xlarge" onclick="w3_open()">&#9776;</button>
+        <div class="summary_container w3-mobile w3-container w3-metro-light-blue">
+            <h1 class="w3-center">My Account</h1>
+            <nav class="w3-bar w3-metro-light-purple">
+                <a href="#plans" class="w3-bar-item w3-button">My Plans</a>
+                <a href="#dietary_restrictions" class="w3-bar-item w3-button">Dietary Restrictions</a>
+                <a href="#health_stats" class="w3-bar-item w3-button">Health Statistics</a>
+            </nav>
+            <div class="summarycards w3-mobile w3-panel w3-card w3-left" id="personal_info">
+                <button class="w3-button w3-metro-purple w3-right" onclick="document.location='edit_personal.html'">Edit</button>
+                <h2 class="w3-center">Personal Information</h2>
+                <p id="account-name" class="w3-center"></p>
+                <p id="account-age" class="w3-center"></p>
+                <p id="account-conditions" class="w3-center"></p>
+            </div>
+            <div class="summarycards w3-mobile w3-panel w3-card w3-left" id="plans">
+                <button class="w3-button w3-metro-purple w3-right" onclick="editAccount()">Edit</button>
+                <h2 class="w3-center">My Plans</h2>
+                <h3 class="w3-center">Currently working towards:</h3>
+                <p class="w3-center">Weight loss</p>
+                <p class="w3-center">Blood sugar control</p>
+                <p class="w3-center">Muscle gain</p>
+            </div>
+            <div class="summarycards w3-mobile w3-panel w3-card w3-left" id="dietary_restrictions">
+                <button class="w3-button w3-metro-purple w3-right" onclick="editAccount()">Edit</button>
+                <h2 class="w3-center">My Dietary Restrictions</h2>
+                <h3 class="w3-center">Conditions and Allergies</h3>
+                <p class="w3-center">Celiac</p>
+                <p class="w3-center">Lactose intolerance</p>
+                <h3 class="w3-center">Food Preferences</h3>
+                <p class="w3-center">No Onions</p>
+            </div>
+            <div class="summarycards w3-mobile w3-panel w3-card w3-left" id="health_stats">
+                <button class="w3-button w3-metro-purple w3-right" onclick="editAccount()">Edit</button>
+                <h2 class="w3-center">Current Health Stats</h2>
+                <p class="w3-center">Weight: 165 lbs</p>
+                <p class="w3-center">Average blood sugar: 90 mg/dl</p>
+                <p class="w3-center">Average calories/day: 2500</p>
+                <p class="w3-center">Average protein/day: 80g</p>
+                <p class="w3-center">Average carbs/day: 250g</p>
+                <p class="w3-center">Average fat/day: 62g</p>
+            </div>
+        </div>
+    </div>
+        <script src="scripts/account.js" async defer></script>
+    </body>
+</html>

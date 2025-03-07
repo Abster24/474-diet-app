@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left w3-metro-purple" style="width:200px;" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+            <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+            <a href="account.html" class="w3-bar-item w3-button w3-mobile">My Account</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Find Products</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">My Plans</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Contact</a>
+        </div>
+
+        <div class="w3-main" style="margin-left:200px">
+        <button class="hamburger-button w3-button w3-metro-purple w3-xlarge" onclick="w3_open()">&#9776;</button>
+        <div class="summary_container w3-mobile w3-container w3-metro-light-blue">
+            <h1 class="w3-center">Summary</h1>
+            <div class="summarycards w3-mobile w3-panel w3-card w3-left">
+                <h2 class="w3-center">My Account</h2>
+                <p class="w3-center">Name: Abbey</p>
+                <p class="w3-center">Age: 20</p>
+                <p class="w3-center">Conditions: Celiac</p>
+            </div>
+            <div class="summarycards w3-mobile w3-panel w3-card w3-left">
+                <h2 class="w3-center">My Goals</h2>
+                <p class="w3-center">Weight: 150 lbs</p>
+                <p class="w3-center">Calories/day: 2000</p>
+                <p class="w3-center">Protein/day: 100g</p>
+                <p class="w3-center">Carbs/day: 200g</p>
+                <p class="w3-center">Fat/day: < 50g</p>
+            </div>
+            <div class="summarycards w3-mobile w3-panel w3-card w3-left">
+                <h2 class="w3-center">My Progress</h2>
+                <p class="w3-center">Weight: 165 lbs</p>
+                <p class="w3-center">Average blood sugar: 90 mg/dl</p>
+                <p class="w3-center">Average calories/day: 2500</p>
+                <p class="w3-center">Average protein/day: 80g</p>
+                <p class="w3-center">Average carbs/day: 250g</p>
+                <p class="w3-center">Average fat/day: 62g</p>
+            </div>
+        </div>
+    </div>
+        <script src="scripts/index.js" async defer></script>
+    </body>
+</html>

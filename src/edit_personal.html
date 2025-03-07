@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Edit Personal Information</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+        <link rel="stylesheet" href="styles/styles.css">
+
+    </head>
+    <body>
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left w3-metro-purple" style="width:200px;" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+            <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+            <a href="account.html" class="w3-bar-item w3-button w3-mobile">My Account</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Find Products</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">My Plans</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Contact</a>
+        </div>
+
+        <div class="w3-main" style="margin-left:200px">
+            <button class="hamburger-button w3-button w3-metro-purple w3-xlarge" onclick="w3_open()">&#9776;</button>
+            <div class="form_container w3-container w3-mobile">
+                <h1 class="w3-center">Edit Personal Information</h1>
+                <form class="w3-mobile w3-card" id="personal_info" onsubmit="saveAccount(); return false;">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" value="."><br>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" value="20"><br />
+                    <h3>Conditions</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="celiac" name="celiac" value="Celiac" checked>
+                                <label for="celiac">Celiac</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="lactose" name="lactose" value="Lactose intolerance">
+                                <label for="lactose">Lactose Intolerance</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="vegan" name="vegan" value="Vegan">
+                                <label for="vegan">Vegan</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="vegetarian" name="vegetarian" value="Vegetarian">
+                                <label for="vegetarian">Vegetarian</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="keto" name="keto" value="Keto">
+                                <label for="keto">Keto</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="paleo" name="paleo" value="Paleo">
+                                <label for="paleo">Paleo</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="wheat" name="wheat" value="Wheat Allergy">
+                                <label for="wheat">Wheat Allergy</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="peanut" name="peanut" value="Peanut Allergy">
+                                <label for="peanut">Peanut Allergy</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="tree" name="tree" value="Tree Nut Allergy">
+                                <label for="tree">Tree Nut Allergy</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="shellfish" name="shellfish" value="Shellfish Allergy">
+                                <label for="shellfish">Shellfish Allergy</label>
+                            </td>
+                        </tr>
+                    </table>
+                    <button class="w3-button w3-metro-purple w3-right" type="submit">Save</button>
+                </form>
+            </div>
+        </div>
+        <script src="scripts/edit_personal.js" async defer></script>
+    </body>
+</html>
