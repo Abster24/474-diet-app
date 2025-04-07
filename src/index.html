@@ -22,15 +22,37 @@
             <a href="#" class="w3-bar-item w3-button w3-mobile">Contact</a>
         </div>
 
+
         <div class="w3-main" style="margin-left:200px">
         <button class="hamburger-button w3-button w3-metro-purple w3-xlarge" onclick="w3_open()">&#9776;</button>
+
+    <!-- Button to Open the Popup -->
+    <button id="openPopup">Login</button>
+
+    <!-- The Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" class="loginInput" id="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" class="loginInput" id="password" required>
+                
+                <button type="button" id="loginButton">Login</button>
+            </form>
+        </div>
+    </div>
+
         <div class="summary_container w3-mobile w3-container w3-metro-light-blue">
             <h1 class="w3-center">Summary</h1>
             <div class="summarycards w3-mobile w3-panel w3-card w3-left">
                 <h2 class="w3-center">My Account</h2>
-                <p class="w3-center">Name: Abbey</p>
-                <p class="w3-center">Age: 20</p>
-                <p class="w3-center">Conditions: Celiac</p>
+                <p class="w3-center" >Name:</p>
+                <p class="w3-center">Age: </p>
+                <p class="w3-center">Conditions:</p>
             </div>
             <div class="summarycards w3-mobile w3-panel w3-card w3-left">
                 <h2 class="w3-center">My Goals</h2>
@@ -38,7 +60,7 @@
                 <p class="w3-center">Calories/day: 2000</p>
                 <p class="w3-center">Protein/day: 100g</p>
                 <p class="w3-center">Carbs/day: 200g</p>
-                <p class="w3-center">Fat/day: < 50g</p>
+                <p class="w3-center">Fat/day: 50g</p>
             </div>
             <div class="summarycards w3-mobile w3-panel w3-card w3-left">
                 <h2 class="w3-center">My Progress</h2>
@@ -52,5 +74,6 @@
         </div>
     </div>
         <script src="scripts/index.js" async defer></script>
+        <script src="scripts/logging.js" type="module" async defer></script>
     </body>
 </html>

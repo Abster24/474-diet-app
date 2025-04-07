@@ -15,7 +15,7 @@
     </head>
     <body>
         <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left w3-metro-purple" style="width:200px;" id="mySidebar">
-            <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+            <button class="w3-bar-item w3-button w3-large w3-hide-large" id="close">Close &times;</button>
             <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
             <a href="account.html" class="w3-bar-item w3-button w3-mobile">My Account</a>
             <a href="#" class="w3-bar-item w3-button w3-mobile">Find Products</a>
@@ -24,7 +24,7 @@
         </div>
 
         <div class="w3-main" style="margin-left:200px">
-        <button class="hamburger-button w3-button w3-metro-purple w3-xlarge" onclick="w3_open()">&#9776;</button>
+        <button class="hamburger-button w3-button w3-metro-purple w3-xlarge" id="ham">&#9776;</button>
         <div class="summary_container w3-mobile w3-container w3-metro-light-blue">
             <h1 class="w3-center">My Account</h1>
             <nav class="w3-bar w3-metro-light-purple">
@@ -33,11 +33,10 @@
                 <a href="#health_stats" class="w3-bar-item w3-button">Health Statistics</a>
             </nav>
             <div class="summarycards w3-mobile w3-panel w3-card w3-left" id="personal_info">
-                <button class="w3-button w3-metro-purple w3-right" onclick="document.location='edit_personal.html'">Edit</button>
                 <h2 class="w3-center">Personal Information</h2>
-                <p id="account-name" class="w3-center"></p>
-                <p id="account-age" class="w3-center"></p>
-                <p id="account-conditions" class="w3-center"></p>
+                <p id="account-name" class="w3-center">Name: </p>
+                <p id="account-age" class="w3-center">Age: </p>
+                <p id="account-conditions" class="w3-center">Conditions: </p>
             </div>
             <div class="summarycards w3-mobile w3-panel w3-card w3-left" id="plans">
                 <button class="w3-button w3-metro-purple w3-right" onclick="editAccount()">Edit</button>
@@ -68,6 +67,7 @@
             </div>
         </div>
     </div>
-        <script src="scripts/account.js" async defer></script>
+        <script src="scripts/account.js" type="module" async defer></script>
+        <script src="scripts/server.js" type="module" async defer></script>
     </body>
 </html>
