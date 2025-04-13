@@ -4,8 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>BetterBites</title>
-        <link rel="icon" type="image/x-icon" href="../BB.png">
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -22,48 +21,16 @@
             <a href="#" class="w3-bar-item w3-button w3-mobile">My Plans</a>
             <a href="#" class="w3-bar-item w3-button w3-mobile">Contact</a>
         </div>
-
         <div class="w3-main" style="margin-left:200px">
         <button class="hamburger-button w3-button w3-metro-purple w3-xlarge" onclick="w3_open()">&#9776;</button>
         <img src="../BB.png" alt="BetterBites Logo" class="logo">
 
-    <!-- Button to Open the Popup -->
-    <button id="openLogin" class="logging-buttons w3-button w3-metro-purple" style="float:right">Login</button>
-    <button id="logoutButton" class="logging-buttons w3-button w3-metro-purple" style="display:none; float:right;">Logout</button>
-
-    <!-- The Login ModalS -->
-    <div id="loginModal" class="modal" style="display:none;">
-        <div class="modal-content">
-            <span class="closeLogin">&times;</span>
-            <h2>Login</h2>
-            <form id="loginForm">
-                <label for="username">Username:</label>
-                <input type="text" class="loginInput" id="username" required>
-                
-                <label for="password">Password:</label>
-                <input type="password" class="loginInput" id="password" required>
-                
-                <button type="button" id="loginButton">Login</button>
-            </form>
-        </div>
-    </div>
-
-    <div id="logoutModal" class="modal" style="display:none;">
-        <div class="modal-content">
-            <span class="closeLogout">&times;</span>
-            <h2>Logout</h2>
-            <p>You are now logged out</p>
-        </div>
-    </div>
-
-    <div class="w3-container">
-        <h1>Welcome to BetterBites!</h1>
-        <p>Your personalized meal planning and grocery shopping assistant.</p>
-        <div id="products"></div>
+        <span class="w3-bar"></span>
         
-        <script src="scripts/index.js" async defer></script>
+
+
+        <script src="scripts/products.js" async defer></script>
         <script src="scripts/sidebar.js" async defer></script>
         <script src="scripts/darkmode.js" async defer></script>
-        <script src="scripts/logging.js" type="module" async defer></script>
     </body>
-</html> 
+</html>

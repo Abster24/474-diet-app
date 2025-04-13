@@ -1,32 +1,46 @@
 
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-  }
-  
-  function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-  }
-
   // Get modal elements
-const modal = document.getElementById("loginModal");
-const openPopup = document.getElementById("openPopup");
-const closePopup = document.querySelector(".close");
+const loginModal = document.getElementById("loginModal");
+const logoutModal = document.getElementById("logoutModal");
+const openLogin = document.getElementById("openLogin");
+const openLogout = document.getElementById("logoutButton");
+const closeLogout = document.querySelector(".closeLogout");
+const closeLogin = document.querySelector(".closeLogin");
 
-// Show modal when login button is clicked
-openPopup.addEventListener("click", () => {
-    modal.style.display = "flex";
+const logout = document.getElementById("logoutButton");
+sessionStorage.getItem("userId") ? logout.style.display = "inline" : logout.style.display = "none";
+
+// Show Login modal when login button is clicked
+openLogin.addEventListener("click", () => {
+    loginModal.style.display = "flex";
+});
+
+//  Show Logout modal when logout button is clicked
+openLogout.addEventListener("click", () => {
+    logoutModal.style.display = "flex";
 });
 
 // Hide modal when close button is clicked
-closePopup.addEventListener("click", () => {
-    modal.style.display = "none";
+closeLogin.addEventListener("click", () => {
+    loginModal.style.display = "none";
+});
+
+closeLogout.addEventListener("click", () => {
+    logoutModal.style.display = "none";
 });
 
 // Hide modal when clicking outside of the modal
 window.addEventListener("click", (event) => {
-    if (event.target === modal) {
-        modal.style.display = "none";
+    if (event.target === loginModal) {
+        loginModal.style.display = "none";
     }
 });
+
+window.addEventListener("click", (event) => {
+    if (event.target === logoutModal) {
+        logoutModal.style.display = "none";
+    }
+});
+
 
 
