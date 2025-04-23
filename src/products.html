@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Products</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -25,9 +25,51 @@
         <button class="hamburger-button w3-button w3-metro-purple w3-xlarge" onclick="w3_open()">&#9776;</button>
         <img src="../BB.png" alt="BetterBites Logo" class="logo">
 
-        <span class="w3-bar"></span>
-        
+        <div class="w3-container">
+          <div class="w3-bar w3-metro-light-purple">
+            <button class="w3-bar-item w3-button w3-hover-purple tablink w3-metro-dark-purple" onclick="openCategory(event,'baking')">Baking</button>
+            <button class="w3-bar-item w3-button w3-hover-purple tablink" onclick="openCategory(event,'bread')">Bread</button>
+            <button class="w3-bar-item w3-button w3-hover-purple tablink" onclick="openCategory(event,'dessert')">Dessert</button>
+            <button class="w3-bar-item w3-button w3-hover-purple tablink" onclick="openCategory(event,'snacks')">Snacks</button>
+            <button class="w3-bar-item w3-button w3-hover-purple tablink" onclick="openCategory(event,'breakfast')">Breakfast</button>
+            <button class="w3-bar-item w3-button w3-hover-purple tablink" onclick="openCategory(event,'sides')">Sides</button>
+            <button class="w3-bar-item w3-button w3-hover-purple tablink" onclick="openCategory(event,'miscellaneous')">Miscellaneous</button>
+          </div>
+            
+          <div id="baking" class="w3-container w3-border category">
+            <h2>Baking</h2>
+            <p>London is the capital category of England.</p>
+          </div>
+          
+          <div id="bread" class="w3-container w3-border category" style="display:none">
+            <h2>Bread Products</h2>
+            <p>Paris is the capital of France.</p> 
+          </div>
+          
+          <div id="dessert" class="w3-container w3-border category" style="display:none">
+            <h2>Dessert</h2>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
 
+          <div id="snacks" class="w3-container w3-border category" style="display:none">
+            <h2>Snacks</h2>
+            <p>Berlin is the capital of Germany.</p>
+          </div>
+
+          <div id="breakfast" class="w3-container w3-border category" style="display:none">
+            <h2>Breakfast</h2>
+            <p>Madrid is the capital of Spain.</p>
+          </div>
+
+          <div id="sides" class="w3-container w3-border category" style="display:none">
+            <h2>Sides</h2>
+            <p>Rome is the capital of Italy.</p>
+          </div>
+
+          <div id="miscellaneous" class="w3-container w3-border category" style="display:none">
+            <h2>Miscellaneous</h2>
+            <p>Lisbon is the capital of Portugal.</p>
+          </div>
 
         <script src="scripts/products.js" async defer></script>
         <script src="scripts/sidebar.js" async defer></script>

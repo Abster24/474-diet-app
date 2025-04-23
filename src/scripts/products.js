@@ -1,9 +1,29 @@
-
 let products = ['B0CJ1YZBD1','B07CL1SRNB','B0CM6W6FS1'];
 
 /*for (let product in products) {
 	displayProducts(products[product]);
 }*/
+
+function openCategory(evt, category) {
+    var i, x, tablinks;
+
+    // Get all elements with the class "city"
+    x = document.getElementsByClassName("category");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; // Hide all city elements
+    }
+
+    // Get all elements with the class "tablink"
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) { // Use tablinks.length instead of x.length
+        tablinks[i].className = tablinks[i].className.replace(" w3-metro-dark-purple", ""); // Remove "w3-red" class
+    }
+
+    // Display the selected city and add the "w3-red" class to the clicked tab
+    document.getElementById(category).style.display = "block";
+    evt.currentTarget.className += " w3-metro-dark-purple"; // Add "w3-red" class to the clicked tab
+}
+
 
 async function getProduct (asin) {
 	const url = `https://real-time-amazon-data.p.rapidapi.com/product-details?asin=${asin}&countrys=US`;
