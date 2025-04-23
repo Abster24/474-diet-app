@@ -1,5 +1,5 @@
 const proxy = 'https://corsproxy.io/?key=868412b1'
-const url = 'https://world.openfoodfacts.org/category/gluten-free-foods.json'
+const url = '&url=https://world.openfoodfacts.org/category/gluten-free-foods.json'
 
 const response = await fetch(proxy + encodeURIComponent(url))
 const data = await response.json()
